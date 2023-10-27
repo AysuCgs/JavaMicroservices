@@ -1,0 +1,30 @@
+server:
+ port: 9091
+ error:
+   whitelabel:
+     enabled: false
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: java10
+    password: 123
+  zipkin:
+    enabled: true
+    base-url: http://localhost:9411
+    service:
+      name: auth-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PASSWORD}
+    url: jdbc:postgresql://localhost:5432/JavaMicroProductDB
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+authservice:
+  secrets:
+    key: ${JAVA_SECRETKEY}
+    issuer: ${JAVA_ISSUER}
+    exDate: 300000

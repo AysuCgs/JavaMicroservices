@@ -1,0 +1,39 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+  config:
+    import: "configserver:"
+  application:
+    name: product-service-application
+
+#server.port: 9091
+#
+#spring:
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    username: ${POSTGRES_USERNAME}
+#    password: ${POSTGRES_PASSWORD}
+#    url: jdbc:postgresql://localhost:5432/JavaMicroProductDB
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#
+#authservice:
+#  secrets:
+#    key: ${JAVA_SECRETKEY}
+#    issuer: ${JAVA_ISSUER}
+#    exDate: 300000
+
+#spring:
+#  datasource:
+#    url: jdbc:h2:mem:mydemodb
+#    username: sa
+#    password:
+#  jpa:
+#    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+#  h2:
+#    console:
+#      enabled: true
+#      settings:
+#        web-allow-others: true

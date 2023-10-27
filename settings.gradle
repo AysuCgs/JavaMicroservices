@@ -1,0 +1,10 @@
+rootProject.name = '_086_JavaMicroservicesDemo'
+include 'AuthService'
+include 'UserProfileService'
+include 'ProductService'
+include 'SaleService'
+include 'ConfigServer'
+include 'ConfigServerGit'
+include 'ApiGatewayService'
+include 'ElasticService'
+
